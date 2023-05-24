@@ -1,0 +1,37 @@
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;  
+}
+
+.menu a {
+  padding: 10px 0px;
+  margin: 0 20px;
+  color: #fff;
+}
+
+.menu a:hover {
+  border-bottom: 2px solid #7766DD;
+  
+}
+
+.social {
+  display: flex;  
+}
+
+.social svg {
+  font-size: 30px;
+  border-radius: 30px;
+  border: 2px solid red;
+  
+  
+}
+
+
