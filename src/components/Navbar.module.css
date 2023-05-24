@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+ 
 }
 
 .menu {
@@ -22,16 +23,47 @@
   
 }
 
+.menu li:hover {
+  transform: scale(1.1);
+}
+
 .social {
   display: flex;  
 }
 
-.social svg {
-  font-size: 30px;
-  border-radius: 30px;
-  border: 2px solid red;
-  
-  
+.social li{
+  display: flex;
+  margin: .4rem; 
 }
+
+.social li:hover {
+  transform: scale(1.2);  
+}
+
+.social li:hover svg {
+  color: #fff;
+}
+
+.social svg {
+  font-size: 40px;
+  border-radius: 30px;
+  color: #7766DD;
+}
+
+@media (max-width: 767px) {
+  .menu {
+    position: absolute;
+    top: 12vh;
+    right: 0;
+    width: 100vw;
+    height: 34vh;
+    background-color: #232332;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+}
+
 
 

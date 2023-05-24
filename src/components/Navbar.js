@@ -1,12 +1,13 @@
 import styles from './Navbar.module.css';
 import { BrowserRouter, Link } from 'react-router-dom';
 import logoStefano from '../assets/images/logo.webp';
-import { BsLinkedin } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 
 const Navbar = () => {
   return (
-    <div className={styles.navbar}>
+    <nav className={styles.navbar}>
       <img src={logoStefano} alt="" />
+
       <ul className={styles.menu}>
         <li>
           <Link to="/">SOBRE</Link>
@@ -21,7 +22,6 @@ const Navbar = () => {
           <Link to="/contato">CONTATO</Link>
         </li>
       </ul>
-
       <ul className={styles.social}>
         <li>
           <Link to="https://www.linkedin.com/in/stefanoads/">
@@ -29,10 +29,12 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="https://github.com/devstefanopinheiro">Github</Link>
+          <Link to="https://github.com/devstefanopinheiro">
+            <BsGithub />
+          </Link>
         </li>
       </ul>
-    </div>
+    </nav>
   );
 };
 

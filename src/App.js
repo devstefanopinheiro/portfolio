@@ -10,6 +10,7 @@ import Contato from './pages/Contato';
 //Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import Whatsapp from './components/Whatsapp';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/tecnologias" element={<Tecnologias />} />
           <Route path="/contato" element={<Contato />} />
         </Routes>
+        <Whatsapp />
         <Footer />
       </BrowserRouter>
     </div>
