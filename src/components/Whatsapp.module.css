@@ -1,0 +1,11 @@
+.whatsapp svg{
+color: #29A71A;
+font-size: 60px;
+position: fixed;
+right: 20px;
+bottom: 80px;
+}
+
+.whatsapp:hover svg {
+  transform: scale(1.1);
+}

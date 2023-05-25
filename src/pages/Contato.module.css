@@ -1,0 +1,200 @@
+
+.contato {
+  height: 46vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 8rem 1.4rem;  
+}
+
+.contato div {  
+  width: 50%;
+}
+
+.contato span {
+  color: #7766DD;
+  font-weight: bold;
+
+}
+
+.contato h2 {
+  font-size: 36px;
+  color: #FFF;
+}
+
+.contato ul li svg {
+  font-size: 40px;
+  color: #7766DD;
+  border-radius: 30px;
+}
+
+.contato ul li:hover {
+  transform: scale(1.1);  
+}
+
+.contato ul li:hover svg {
+  color: #fff;
+}
+
+.contato ul li button {
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  background-color: transparent;  
+  border: 1px solid #7766DD; 
+}
+
+
+.contato ul li button a {
+  color: #7766DD;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.contato ul li button svg {
+ border-radius: 0;
+ font-size: 20px;
+ color: #7766DD;
+}
+
+.contato ul li button:hover {
+  background-color: #7766DD;   
+}
+
+.contato ul li button:hover a {
+  color: #fff;
+}
+
+.contato ul li button:hover svg {  
+  color: #FFF;
+ }
+
+.info {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem 0;
+  border-right: 5px solid #7766DD;
+}
+
+.info span {
+  color: #FFF;
+  font-size: 20px;
+  
+}
+
+.info li a{
+ display: flex;
+ align-items: center;
+ gap: .5rem;
+ 
+ 
+}
+
+.social {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.formulario {
+  display: flex;
+  justify-content: center;   
+  padding: 4rem 0;
+}
+
+.formulario form {  
+  display: flex;
+  flex-direction: column;
+  
+ }
+
+ .formulario input , .formulario textarea {
+  border: none;
+  padding: 1rem;
+  margin: 0.7rem 0;
+  border-radius: 30px;
+ }
+
+input[type="text"].nome::placeholder , textarea.assunto::placeholder { 
+  font-family: "Fira Code" , sans-serif;    
+  font-weight: 600;
+  color: #AAAAAA;  
+}
+
+input[type="text"].nome:focus , textarea.assunto:focus {
+  outline: none;
+}
+
+input.nome {
+  padding: 0.7rem;
+}
+
+textarea.assunto {
+  border-radius: 20px;
+  margin: 0.7rem 0;
+  
+}
+
+.enviar {
+  display: block;
+  background-color: transparent;
+  border: 2px solid #7766DD !important;
+  color: #FFF;
+  font-family: "Fira Code";
+  font-weight: 600;
+}
+
+.enviar:hover {
+  cursor: pointer;
+  background-color: #7766DD;
+}
+
+
+
+
+
+
+
+/*
+
+
+ .desenvolvedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  
+  box-sizing: border-box;
+ }
+ .desenvolvedor img {
+  max-width: 80%;
+ }
+
+*/
+
+.arrow {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: flex-start;
+gap: .4rem;
+padding: 0 1.4rem 4rem 1.4rem ;
+}
+.arrow:hover svg {
+color: #FFF;
+}
+
+.arrow:hover span {
+  color: #7766DD;
+}
+
+.arrow svg {
+  font-size: 38px;
+  color: #7766DD;
+}
+ .arrow span{
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;  
+ }

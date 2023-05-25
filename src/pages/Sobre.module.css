@@ -1,0 +1,204 @@
+
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/images/banner.webp") no-repeat;
+  background-size: auto;    
+  height: 600px;
+  margin-top: -100px;
+}
+.banner div {
+  max-width: 1200px;
+  margin: 0 auto;
+ 
+}
+
+.banner div p{
+  color: #FFF;
+  font-size: 44px;  
+  border: 1px solid #fff;
+  padding: 3rem;
+  margin: 0.5rem;  
+}
+
+.banner div p span {
+  font-weight: bold;
+  color: #7766DD;
+}
+
+
+.informacoes {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 8rem 1.4rem;  
+}
+
+.informacoes div {  
+  width: 50%;
+}
+
+.informacoes span {
+  color: #7766DD;
+  font-weight: bold;
+
+}
+
+.informacoes h2 {
+  font-size: 36px;
+  color: #FFF;
+}
+
+.informacoes p {
+  color: #FFF;
+  line-height: 1.8rem;  
+  border-right: 5px solid #7766DD;
+  padding: 1rem 5rem 1rem 0;
+}
+
+.informacoes ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.informacoes ul li svg {
+  font-size: 40px;
+  color: #7766DD;
+  border-radius: 30px;
+}
+
+.informacoes ul li:hover {
+  transform: scale(1.1);  
+}
+
+.informacoes ul li:hover svg {
+  color: #fff;
+}
+
+.informacoes ul li button {
+  padding: 0.4rem 1rem;
+  border-radius: 30px;
+  background-color: transparent;  
+  border: 1px solid #7766DD;
+ 
+}
+
+.informacoes ul li button a {
+  color: #7766DD;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.informacoes ul li button svg {
+ border-radius: 0;
+ font-size: 20px;
+ color: #7766DD;
+}
+
+.informacoes ul li button:hover {
+  background-color: #7766DD;
+   
+}
+
+.informacoes ul li button:hover a {
+  color: #fff;
+}
+
+.informacoes ul li button:hover svg {  
+  color: #FFF;
+ }
+
+ .desenvolvedor {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  
+  box-sizing: border-box;
+ }
+ .desenvolvedor img {
+  max-width: 80%;
+ }
+
+.arrow {
+max-width: 1200px;
+margin: 0 auto;
+display: flex;
+justify-content: flex-end;
+gap: .4rem;
+padding: 0 1.4rem 4rem 1.4rem ;
+}
+.arrow:hover svg {
+color: #FFF;
+}
+
+.arrow:hover span {
+  color: #7766DD;
+}
+
+.arrow svg {
+  font-size: 38px;
+  color: #7766DD;
+}
+ .arrow span{
+  color: #FFF;
+  font-size: 30px;
+  font-weight: bold;  
+ }
+
+ @media (max-width: 767px) {
+  .banner {    
+    background:  linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../assets/images/banner.webp") no-repeat;   
+  }
+  
+  .banner div p{  
+    padding: 1rem;
+    margin: 1rem;  
+  }  
+  
+  .informacoes { 
+    flex-direction: column;   
+    padding: 4rem 1.4rem;  
+  }
+  
+  .informacoes div {  
+    width: 100%;
+  }  
+
+  .informacoes p {    
+    border-right: none; 
+    text-align: center;
+    width: 100%;  
+    padding: 1rem 5rem 1rem 0;
+  }  
+
+  .informacoes span {
+   display: flex;
+   justify-content: center;
+  }
+  
+  .informacoes h2 {
+    text-align: center;
+  }
+
+
+  .informacoes ul {    
+    justify-content: center;
+    padding-bottom: 2rem;
+    border-bottom: 3px solid #7766DD;
+  } 
+  
+   .desenvolvedor {
+    margin-top: 2rem;
+   }
+  
+  
+  .arrow {  
+  justify-content: center;  
+  }  
+
+ }
+
+
