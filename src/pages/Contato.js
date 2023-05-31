@@ -1,4 +1,6 @@
 import styles from './Contato.module.css';
+import Curriculo from '../components/Curriculo';
+
 import {
   BsLinkedin,
   BsGithub,
@@ -10,7 +12,43 @@ import { GrMail } from 'react-icons/gr';
 import { Link } from 'react-router-dom';
 import { IoLogoWhatsapp } from 'react-icons/io';
 
+import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
 const Contato = () => {
+  const [nome, setNome] = useState('');
+  const [email, setEmail] = useState('');
+  const [assunto, setAssunto] = useState('');
+
+  const enviandoEmail = (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: nome,
+      message: assunto,
+      email: email,
+    };
+
+    emailjs
+      .send(
+        'service_q7wgbpn',
+        'template_caslj3d',
+        templateParams,
+        'oJMNFI6efdzwR7Vbx',
+      )
+      .then(
+        (response) => {
+          console.log('EMAIL ENVIADO', response.status, response.text);
+          setNome('');
+          setEmail('');
+          setAssunto('');
+        },
+        (err) => {
+          console.log('ERRO: ', err);
+        },
+      );
+  };
+
   return (
     <>
       <div className={styles.contato}>
@@ -49,20 +87,27 @@ const Contato = () => {
               </Link>
             </li>
             <li>
-              <button>
-                <Link to="https://github.com/devstefanopinheiro">
-                  Curriculo <BsFiletypePdf />
-                </Link>
-              </button>
+              <Curriculo />
             </li>
           </ul>
         </div>
         <div className={styles.formulario}>
-          <form>
+          <form onSubmit={enviandoEmail}>
             <input
               type="text"
-              className={styles.nome}
+              className={styles.input}
               placeholder="Digite seu nome"
+              onChange={(e) => setNome(e.target.value)}
+              value={nome}
+              required
+            />
+            <input
+              type="text"
+              className={styles.input}
+              placeholder="Digite seu email"
+              onChange={(e) => setEmail(e.target.value)}
+              value={email}
+              required
             />
             <textarea
               name=""
@@ -70,6 +115,9 @@ const Contato = () => {
               placeholder="Digite o assunto"
               cols="30"
               rows="5"
+              onChange={(e) => setAssunto(e.target.value)}
+              value={assunto}
+              required
             ></textarea>
             <input type="submit" className={styles.enviar} value="Enviar" />
           </form>

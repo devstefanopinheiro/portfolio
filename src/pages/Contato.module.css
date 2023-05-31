@@ -37,38 +37,6 @@
   color: #fff;
 }
 
-.contato ul li button {
-  padding: 0.4rem 1rem;
-  border-radius: 30px;
-  background-color: transparent;  
-  border: 1px solid #7766DD; 
-}
-
-
-.contato ul li button a {
-  color: #7766DD;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.contato ul li button svg {
- border-radius: 0;
- font-size: 20px;
- color: #7766DD;
-}
-
-.contato ul li button:hover {
-  background-color: #7766DD;   
-}
-
-.contato ul li button:hover a {
-  color: #fff;
-}
-
-.contato ul li button:hover svg {  
-  color: #FFF;
- }
-
 .info {
   display: flex;
   align-items: start;
@@ -117,17 +85,17 @@
   border-radius: 30px;
  }
 
-input[type="text"].nome::placeholder , textarea.assunto::placeholder { 
+input[type="text"].input::placeholder , textarea.assunto::placeholder { 
   font-family: "Fira Code" , sans-serif;    
   font-weight: 600;
   color: #AAAAAA;  
 }
 
-input[type="text"].nome:focus , textarea.assunto:focus {
+input[type="text"].input:focus , textarea.assunto:focus {
   outline: none;
 }
 
-input.nome {
+input.input {
   padding: 0.7rem;
 }
 

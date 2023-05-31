@@ -78,47 +78,14 @@
   color: #fff;
 }
 
-.informacoes ul li button {
-  padding: 0.4rem 1rem;
-  border-radius: 30px;
-  background-color: transparent;  
-  border: 1px solid #7766DD;
- 
-}
-
-.informacoes ul li button a {
-  color: #7766DD;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.informacoes ul li button svg {
- border-radius: 0;
- font-size: 20px;
- color: #7766DD;
-}
-
-.informacoes ul li button:hover {
-  background-color: #7766DD;
-   
-}
-
-.informacoes ul li button:hover a {
-  color: #fff;
-}
-
-.informacoes ul li button:hover svg {  
-  color: #FFF;
- }
-
  .desenvolvedor {
   display: flex;
   justify-content: center;
-  align-items: center;  
-  
+  align-items: center;    
   box-sizing: border-box;
  }
  .desenvolvedor img {
+  width: 350px;
   max-width: 80%;
  }
 

@@ -1,8 +1,9 @@
 import styles from './Sobre.module.css';
-import { BsLinkedin, BsGithub, BsFiletypePdf } from 'react-icons/bs';
+import { BsLinkedin, BsGithub } from 'react-icons/bs';
 import { BiChevronRightCircle } from 'react-icons/bi';
 import { Link } from 'react-router-dom';
-import stefano from '../assets/images/stefano.svg';
+import stefano from '../assets/images/stefano.webp';
+import Curriculo from '../components/Curriculo';
 
 const Sobre = () => {
   return (
@@ -41,11 +42,7 @@ const Sobre = () => {
               </Link>
             </li>
             <li>
-              <button>
-                <Link to="https://github.com/devstefanopinheiro">
-                  Curriculo <BsFiletypePdf />
-                </Link>
-              </button>
+              <Curriculo />
             </li>
           </ul>
         </div>

@@ -1,0 +1,144 @@
+.projetos {      
+  max-width: 1200px;
+  min-height: 76vh;
+  margin: 0 auto;
+  padding: 2rem 1.4rem;  
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.projetos p {
+  color: #FFF;
+  line-height: 1.8rem; 
+  border-right: 5px solid #7766DD;
+  padding: 1rem 5rem 2rem 0; 
+}
+
+.projetos ul li > div {
+  width: 50%;
+}
+
+.projetos li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.descricao {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-right: 5rem;  
+}
+
+.descricao svg {
+  font-size: 40px;
+  color: #7766DD;
+  border-radius: 30px;
+}
+.descricao a:hover {
+  transform: scale(1.1);  
+}
+.descricao a:hover svg {
+  color: #fff;
+}
+
+.dots_projetos {
+  display: flex;
+}
+.dots_projetos button{
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid #7766DD ;
+  color: #fff;
+  margin-right: 0.5rem;  
+  border-radius: 50%; 
+  font-weight: bold;
+  font-size: 1.2rem;
+  background: transparent;  
+  cursor: pointer;
+  
+}
+.dots_projetos button:hover {
+  background-color: #7766DD;
+  
+}
+.descricao span {
+  color: #7766DD;
+  font-weight: bold;
+
+}
+.descricao h2 {
+  font-size: 36px;
+  color: #FFF;
+}
+.tecnologias {
+  display: flex;
+  gap: 1rem;
+}
+
+.imagem_projetos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.imagem_projetos li {
+  position: relative;
+  
+
+}
+
+.imagem_projetos li div {
+  position: absolute;   
+  left: -100px;
+}
+
+.imagem_projetos li:nth-child(1) div {
+  top: -200px;
+  left: -200px;
+  z-index: 10;
+ 
+}
+
+@media (max-width: 1023px) {
+  .projetos {    
+    min-height: 81vh; 
+  }
+
+  
+  
+ 
+  
+  .projetos ul li > div {
+    width: 100%;
+  }
+  
+  .projetos li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .descricao {
+    display: flex;    
+    justify-content: space-between;
+    align-items: end;
+    margin-right: 5rem;  
+  }
+    
+
+  .imagem_projetos li div {
+    margin-top: 2rem;
+  }  
+  .imagem_projetos li:nth-child(1) div {   
+    top: 0px;
+    left: -300px;   
+   
+  }
+}
+
+
+
+

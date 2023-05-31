@@ -1,0 +1,25 @@
+.curriculo button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  border-radius: 30px;
+  background-color: transparent;  
+  border: 1px solid #7766DD;
+  color: #7766DD;
+  font-size: 1.1rem;
+  font-weight: 500;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.curriculo span svg{
+  border-radius: 0 !important;  
+  width: 30px;
+  color: #7766DD;
+}
+.curriculo button:hover {
+  background-color: #7766DD;
+  color: #fff;
+}
+
