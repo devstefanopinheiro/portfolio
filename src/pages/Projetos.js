@@ -6,22 +6,12 @@ import { NavLink, Link } from 'react-router-dom';
 import { BsGithub } from 'react-icons/bs';
 import { BiChevronLeftCircle, BiChevronRightCircle } from 'react-icons/bi';
 
+import data from '../assets/data/project';
+
 const Projetos = () => {
-  const [projetos, setProjetos] = useState([]);
+  const [projetos, setProjetos] = useState(data.project);
   const [projetoAtual, setProjetoAtual] = useState(1);
   const [corAtiva, setCorAtiva] = useState(1);
-
-  const url = 'http://localhost:3000/project';
-
-  useEffect(() => {
-    async function fetchData() {
-      const res = await fetch(url);
-      const data = await res.json();
-
-      setProjetos(data);
-    }
-    fetchData();
-  }, []);
 
   const handleClick = (id) => {
     setProjetoAtual(id);
