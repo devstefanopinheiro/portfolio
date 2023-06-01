@@ -123,7 +123,7 @@ const Contato = () => {
           </form>
         </div>
       </div>
-      <Link className={styles.arrow} to="/projetos">
+      <Link className={styles.arrow} to="/tecnologias">
         <span>TECNOLOGIAS</span>
         <BiChevronLeftCircle />
       </Link>

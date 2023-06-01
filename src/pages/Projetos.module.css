@@ -86,8 +86,6 @@
 
 .imagem_projetos li {
   position: relative;
-  
-
 }
 
 .imagem_projetos li div {
@@ -98,18 +96,47 @@
 .imagem_projetos li:nth-child(1) div {
   top: -200px;
   left: -200px;
-  z-index: 10;
- 
+  z-index: 10; 
 }
+
+.arrow {
+  max-width: 1200px;  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: .4rem;
+  padding: 4rem 1.4rem ;
+  }
+
+  .arrow_Left div, .arrow_Right div{
+    display: flex;
+    align-items: center;
+  }
+
+  .arrow_Left div:hover svg , .arrow_Right div:hover svg {
+  color: #FFF;
+  }
+  
+  .arrow_Left div:hover span , .arrow_Right div:hover span {
+    color: #7766DD;
+  }
+  
+  .arrow_Left svg , .arrow_Right svg {
+    font-size: 38px;
+    color: #7766DD;
+  }
+  .arrow_Left span , .arrow_Right span{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;  
+   }
+
+
 
 @media (max-width: 1023px) {
   .projetos {    
     min-height: 81vh; 
   }
-
-  
-  
- 
   
   .projetos ul li > div {
     width: 100%;
@@ -137,6 +164,37 @@
     left: -300px;   
    
   }
+}
+
+@media (max-width: 767px) {
+  
+.projetos p {  
+  border-right: none;
+  padding: 1rem 0rem 2rem 0; 
+}
+.imagem_projetos img {
+  max-width: 200px;
+}
+.imagem_projetos li div { 
+  left: -50px;
+}
+
+.imagem_projetos li:nth-child(1) div {
+  top: 0px;
+  left: -150px;
+  z-index: 10; 
+}
+
+.arrow {   
+  gap: 0rem;
+  padding: 0;
+  margin-top: 15rem;
+  }
+
+.arrow span {
+  font-size: 1.8rem;
+}
+
 }
 
 

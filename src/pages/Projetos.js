@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
 import { BsGithub } from 'react-icons/bs';
+import { BiChevronLeftCircle, BiChevronRightCircle } from 'react-icons/bi';
 
 const Projetos = () => {
   const [projetos, setProjetos] = useState([]);
@@ -95,6 +96,20 @@ const Projetos = () => {
           <li>Nenhum projeto selecionado</li>
         )}
       </ul>
+      <div className={styles.arrow}>
+        <Link className={styles.arrow_Left} to="/">
+          <div>
+            <span>SOBRE</span>
+            <BiChevronLeftCircle />
+          </div>
+        </Link>
+        <Link className={styles.arrow_Right} to="/tecnologias">
+          <div>
+            <BiChevronRightCircle />
+            <span>TECNOLOGIAS</span>
+          </div>
+        </Link>
+      </div>
     </div>
   );
 };
