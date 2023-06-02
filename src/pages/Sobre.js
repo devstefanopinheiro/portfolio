@@ -25,10 +25,11 @@ const Sobre = () => {
           <span>Dev.</span>
           <h2>SOBRE</h2>
           <p>
-            is simply dummy text of the printing and typesetting industry. Lorem
-            Ipsum has been the industry's standard dummy text ever since the
-            1500s, when an unknown printer took a galley of type and scrambled
-            it to make
+            Desde que descobri a programação, tornei-me um entusiasta de
+            tecnologia. A cada dia, meu interesse e fascínio por essa área só
+            aumentam à medida que me aprofundo nos estudos. No momento, possuo
+            experiência em HTML, CSS, JavaScript, WordPress, React, Elementor,
+            servidores, hospedagem, Git e GitHub.
           </p>
           <ul className={styles.social}>
             <li>

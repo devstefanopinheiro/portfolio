@@ -11,12 +11,14 @@ import Contato from './pages/Contato';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Whatsapp from './components/Whatsapp';
+import EmDesenvolvimento from './pages/EmDesenvolvimento';
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Navbar />
+        <EmDesenvolvimento />
         <Routes>
           <Route path="/" element={<Sobre />} />
           <Route path="/projetos" element={<Projetos />} />
