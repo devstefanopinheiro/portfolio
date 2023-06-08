@@ -18,7 +18,6 @@ function App() {
     <div>
       <BrowserRouter>
         <Navbar />
-        <EmDesenvolvimento />
         <Routes>
           <Route path="/" element={<Sobre />} />
           <Route path="/projetos" element={<Projetos />} />

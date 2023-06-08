@@ -27,64 +27,66 @@ const Tecnologias = () => {
     }
   };
   return (
-    <div className={styles.tecnologia}>
-      <div>
+    <div className={styles.container}>
+      <div className={styles.tecnologia}>
         <div>
-          <ul className={styles.tec_descricao}>
-            {tecnologiaAtual ? (
-              tecnologias
-                .filter((tecnologia) => tecnologia.id === tecnologiaAtual)
-                .map((tecnologia) => (
-                  <li key={tecnologia.id}>
-                    <span>INDEX.HTML</span>
-                    <h2>{tecnologia.titulo}</h2>
-                    <p>{tecnologia.descricao}</p>
-                  </li>
-                ))
-            ) : (
-              <span>não achou nenhum projeto</span>
-            )}
-          </ul>
-        </div>
-        <div className={styles.tec_img}>
-          <ul>
-            <li
-              className={tecnologiaAtual === 1 ? styles.select : ''}
-              onClick={(e) => setTecnologiaAtual(1)}
-            >
-              <img src={html} alt="HTML" />
-            </li>
-            <li
-              className={tecnologiaAtual === 2 ? styles.select : ''}
-              onClick={(e) => setTecnologiaAtual(2)}
-            >
-              <img src={css} alt="CSS" />
-            </li>
-            <li
-              className={tecnologiaAtual === 3 ? styles.select : ''}
-              onClick={(e) => setTecnologiaAtual(3)}
-            >
-              <img src={javascript} alt="JAVSCRIPT" />
-            </li>
-            <li
-              className={tecnologiaAtual === 4 ? styles.select : ''}
-              onClick={(e) => setTecnologiaAtual(4)}
-            >
-              <img src={react} alt="REACT" />
-            </li>
-            <li
-              className={tecnologiaAtual === 5 ? styles.select : ''}
-              onClick={(e) => setTecnologiaAtual(5)}
-            >
-              <img src={github} alt="GITHUB" />
-            </li>
-            <li
-              className={tecnologiaAtual === 6 ? styles.select : ''}
-              onClick={(e) => setTecnologiaAtual(6)}
-            >
-              <img src={git} alt="GIT" />
-            </li>
-          </ul>
+          <div>
+            <ul className={styles.tec_descricao}>
+              {tecnologiaAtual ? (
+                tecnologias
+                  .filter((tecnologia) => tecnologia.id === tecnologiaAtual)
+                  .map((tecnologia) => (
+                    <li key={tecnologia.id}>
+                      <span>INDEX.HTML</span>
+                      <h2>{tecnologia.titulo}</h2>
+                      <p>{tecnologia.descricao}</p>
+                    </li>
+                  ))
+              ) : (
+                <span>não achou nenhum projeto</span>
+              )}
+            </ul>
+          </div>
+          <div className={styles.tec_img}>
+            <ul>
+              <li
+                className={tecnologiaAtual === 1 ? styles.select : ''}
+                onClick={(e) => setTecnologiaAtual(1)}
+              >
+                <img src={html} alt="HTML" />
+              </li>
+              <li
+                className={tecnologiaAtual === 2 ? styles.select : ''}
+                onClick={(e) => setTecnologiaAtual(2)}
+              >
+                <img src={css} alt="CSS" />
+              </li>
+              <li
+                className={tecnologiaAtual === 3 ? styles.select : ''}
+                onClick={(e) => setTecnologiaAtual(3)}
+              >
+                <img src={javascript} alt="JAVSCRIPT" />
+              </li>
+              <li
+                className={tecnologiaAtual === 4 ? styles.select : ''}
+                onClick={(e) => setTecnologiaAtual(4)}
+              >
+                <img src={react} alt="REACT" />
+              </li>
+              <li
+                className={tecnologiaAtual === 5 ? styles.select : ''}
+                onClick={(e) => setTecnologiaAtual(5)}
+              >
+                <img src={github} alt="GITHUB" />
+              </li>
+              <li
+                className={tecnologiaAtual === 6 ? styles.select : ''}
+                onClick={(e) => setTecnologiaAtual(6)}
+              >
+                <img src={git} alt="GIT" />
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div className={styles.arrow}>

@@ -7,6 +7,10 @@
   justify-content: space-between; 
 }
 
+.navbar img {
+  max-width: 220px;  
+}
+
 .menu {
   display: flex;  
 }
@@ -52,6 +56,12 @@
   border-bottom: 2px solid #7766DD;
   font-weight: 500;
   transform: scale(1.2);  
+}
+
+/* Estilos para o menu mobile */
+
+.menu_mobile {
+  overflow-x: hidden;
 }
 
 .menu_mobile ul li{  
@@ -108,9 +118,7 @@ font-size: 2.2rem;
 }
 
 
-.navbar img {
-  max-width: 220px;  
-}
+
 
 .social {
   display: none;
@@ -126,10 +134,14 @@ font-size: 2.2rem;
   padding-top: 2rem;
   transform: translateX(100%);
   transition: transform 0.3s ease-in;
+  overflow-x: hidden ;
+  display: none;
 }
 
 .menuContent.open {
+  display: block;
   transform: translateX(0);
+
  
 }
 

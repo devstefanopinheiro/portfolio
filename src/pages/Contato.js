@@ -50,7 +50,7 @@ const Contato = () => {
   };
 
   return (
-    <>
+    <div className={styles.container}>
       <div className={styles.contato}>
         <div>
           <span>Meu</span>
@@ -127,7 +127,7 @@ const Contato = () => {
         <span>TECNOLOGIAS</span>
         <BiChevronLeftCircle />
       </Link>
-    </>
+    </div>
   );
 };
 

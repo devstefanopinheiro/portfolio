@@ -7,7 +7,7 @@ import Curriculo from '../components/Curriculo';
 
 const Sobre = () => {
   return (
-    <>
+    <div className={styles.sobre}>
       <div className={styles.banner}>
         <div>
           <p>
@@ -55,7 +55,7 @@ const Sobre = () => {
         <BiChevronRightCircle />
         <span>PROJETOS</span>
       </Link>
-    </>
+    </div>
   );
 };
 
